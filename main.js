@@ -64,7 +64,7 @@ const sleep = async (ms) => {
 const starts = async (client = new WAConnection()) => {
   client.logger.level = "warn";
   client.version = [2, 2143, 3];
-  client.browserDescription = ["YT FazrinEzz  ", "Chrome", "3.0"];
+  client.browserDescription = ["YT FazrinEzz ", "Chrome", "3.0"];
   console.log(banner.string);
   client.on("qr", () => {
     console.log(
@@ -207,7 +207,7 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
                 time_welc = moment.tz('Asia/Jakarta').format('DD/MM/YYYY')
                 time_wel = moment.tz('Asia/Jakarta').format("hh:mm")
                 teks = `🌿 *Hɪ* @${num.split('@')[0]}\n🌿 *Bɪᴏ* : *${thu.status}*\n🌿 *Mᴇᴍʙᴇʀs : ${memeg}*\n🌿 *Wᴇʟᴄᴏᴍᴇ Tᴏ* \n *${mdata.subject}*\n🌿 *ᴅᴏɴᴛ ꜰᴏʀɢᴇᴛ ᴛᴏ ʀᴇᴀᴅ ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ*\n Fazrin Ezz`
-                welcomeBut = [{buttonId:`getdeskgc`,buttonText:{displayText:'DESCRIPTION'},type:1}, {buttonId:`okeyx`,buttonText:{displayText:'CLICK HERE'},type:1}]
+                welcomeBut = [{buttonId:`getdeskgc`,buttonText:{displayText:'DESCRIPTION'},type:1}, {buttonId:`menu`,buttonText:{displayText:'MENU'},type:1}]
                 welcomeButt = { contentText: ` `, footerText: `${teks}`, buttons: welcomeBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
                 client.sendMessage(mdata.id, welcomeButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
                  }
@@ -218,11 +218,11 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
 			    const bosco4 = bosco3.message["ephemeralMessage"] ? bosco3.message.ephemeralMessage : bosco3
                 let w = client.contacts[num] || { notify: num.replace(/@.+/, '') }
                 anu_user = w.vname || w.notify || num.split('@')[0]
-                time_welc = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
-                time_wel = moment.tz('Asia/Kolkata').format("hh:mm")
+                time_welc = moment.tz('Asia/Jakarta').format('DD/MM/YYYY')
+                time_wel = moment.tz('Asia/Jakarta').format("hh:mm")
                 memeg = mdata.participants.length
-                out = `*Gᴏᴏᴅ Bʏᴇ* 👋\n@${num.split('@')[0]}\n*𝙷𝚘𝚙𝚎𝚏𝚞𝚕𝚕𝚢 𝚃𝚑𝚎𝚛𝚎 𝚆𝚘𝚗𝚝 𝙱𝚎 𝙱𝚞𝚛𝚍𝚎𝚗 𝙷𝚎𝚛𝚎 𝙰𝚗𝚢𝚖𝚘𝚛𝚎* 🌿\nFAZRIN EZZ`
-                goodbyeBut = [{buttonId:`h`,buttonText:{displayText:'GET OUT 🚪'},type:1}, {buttonId:`sc`,buttonText:{displayText:'BOT SCRIPT'}, type:1}]
+                out = `*Gᴏᴏᴅ Bʏᴇ* 👋\n@${num.split('@')[0]}\n*Beban grup udah kluar* 🌿\nFAZRIN EZZ`
+                goodbyeBut = [{buttonId:`kdohb5`,buttonText:{displayText:'wkwk'},type:1}, {buttonId:`menu`,buttonText:{displayText:'MENU'}, type:1}]
                 goodbyeButt = { contentText: ` `, footerText: `${out}`, buttons: goodbyeBut, headerType: 6, locationMessage: bosco3.message.locationMessage}
                 client.sendMessage(mdata.id, goodbyeButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
             }
